@@ -1,5 +1,5 @@
-#include "./src/app/processManagement/processManagement.hpp"
-#include "./src/app/processManagement/task.hpp"
+#include "./src/app/processes/processManagement.hpp"
+#include "./src/app/processes/task.hpp"
 #include <filesystem>
 #include <fstream>
 #include <iostream>
@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
         }
       }
 
-      process_mgmt.execute_task();
+      process_mgmt.execute_tasks();
     } else {
       std::cout << "Invalid directory path: " << std::endl;
     }

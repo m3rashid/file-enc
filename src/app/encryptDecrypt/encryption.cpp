@@ -1,6 +1,6 @@
 #include "encryption.hpp"
 #include "../fileHandling/read_env.cpp"
-#include "../processManagement/task.hpp"
+#include "../processes/task.hpp"
 
 int execute_encryption(const std::string &task_data) {
   Task task = Task::fromString(task_data);

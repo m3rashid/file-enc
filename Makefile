@@ -1,12 +1,12 @@
 
 CXX = g++
-CXXFLAGS = -std=c++17 -g -Wall -I . -I src/app/encryptDecrypt -I src/app/fileHandling -I src/app/processManagement
+CXXFLAGS = -std=c++17 -g -Wall -I . -I src/app/encryptDecrypt -I src/app/fileHandling -I src/app/processes
 
 MAIN_TARGET = encrypt_decrypt
 CRYPTION_TARGET = cryption
 
 MAIN_SRC = main.cpp \
-           src/app/processManagement/processManagement.cpp \
+           src/app/processes/processManagement.cpp \
            src/app/fileHandling/IO.cpp \
            src/app/fileHandling/read_env.cpp \
            src/app/encryptDecrypt/encryption.cpp

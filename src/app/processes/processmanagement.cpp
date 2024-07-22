@@ -12,7 +12,7 @@ bool ProcessManagement::submit_to_queue(std::unique_ptr<Task> task) {
   return true;
 }
 
-void ProcessManagement::execute_task() {
+void ProcessManagement::execute_tasks() {
   while (!task_queue.empty()) {
     std::unique_ptr<Task> task_to_execute = std::move(task_queue.front());
     task_queue.pop();
